@@ -1,0 +1,4 @@
+Linear Search: O(n)
+Binary Search: O(log n)
+
+Binary search is faster on sorted data. For large product catalogs, binary search is preferred if sorting is already handled.

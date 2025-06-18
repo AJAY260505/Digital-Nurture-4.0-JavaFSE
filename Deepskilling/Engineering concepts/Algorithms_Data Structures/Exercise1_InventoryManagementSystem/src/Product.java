@@ -1,6 +1,6 @@
 public class Product {
     private int productId;
-    private String productName;
+    String productName;
     private int quantity;
     private double price;
 
@@ -9,6 +9,10 @@ public class Product {
         this.productName = productName;
         this.quantity = quantity;
         this.price = price;
+    }
+
+    public Product(int i, String string, String string2) {
+        //TODO Auto-generated constructor stub
     }
 
     // Getters and setters

@@ -1,0 +1,16 @@
+Why Data Structures Matter:
+When managing a big inventory, it's important to use the right data structures so we can quickly find, update, or remove products. The better the structure, the faster the system works — especially when dealing with thousands of items.
+
+Which Data Structures Work Best:
+- ArrayList is simple and easy to use. It's good if we want to keep items in order, but searching or updating can be slow when there are many products.
+- HashMap is better for large inventories because we can add, update, or find products very quickly using their productId as a key.
+
+Time Complexity (when using HashMap):
+- Add: O(1)
+- Update: O(1)
+- Delete: O(1)
+- Search: O(1)
+
+How to Make It Even Better:
+- Using productId as the key in the HashMap helps keep everything fast and organized.
+- We can also check if a productId already exists before adding to avoid duplicates or overwriting by mistake.

@@ -1,0 +1,23 @@
+Why use arrays?
+
+Arrays are a simple and efficient way to store data. Since all elements are stored next to each other in memory, accessing any value using an index (like `arr[0]`) is super fast — it takes constant time (O(1)).
+
+Time taken for different operations:
+
+Add:O(1) – If we're just adding at the end, it's quick.
+Search:O(n) – We have to check one by one until we find the match.
+Traverse:O(n) – Going through each element takes time based on array size.
+Delete:O(n) – After deleting, we have to shift the elements to fill the gap.
+
+Limitations:
+
+The size of the array is fixed — you can’t make it grow or shrink automatically.
+If you insert or delete from the middle, you’ll need to shift everything, which slows things down.
+Arrays aren’t great if your data changes size often (like in real-time apps or dynamic systems).
+
+
+When is an array a good choice?
+
+When you know roughly how many items you need to store.
+When you need fast access using an index, like finding the 10th item quickly.
+

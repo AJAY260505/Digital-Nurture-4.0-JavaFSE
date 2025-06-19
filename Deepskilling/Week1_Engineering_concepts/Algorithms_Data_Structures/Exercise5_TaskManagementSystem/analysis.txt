@@ -1,0 +1,22 @@
+Why Linked Lists
+
+Linked lists are useful for managing dynamic data because they do not require a fixed size like arrays. Each element, called a node, stores both the data and a reference to the next node in the list.
+
+Types of Linked Lists
+
+A singly linked list is a type where each node points to the next node in the sequence.
+A doubly linked list is a more flexible version where each node points to both the next and the previous node.
+
+Time Complexity of Operations
+
+Adding a new task at the end of the list takes linear time, O(n), because we have to traverse to the end.
+Searching for a task and traversing through the list also take O(n) time.
+Deleting a task by its ID requires traversal, so it also has a time complexity of O(n).
+
+Advantages Over Arrays
+
+Linked lists do not need the size to be defined in advance.
+Insertion and deletion operations are easier and more efficient, especially in the middle of the list.
+They are a better choice when the number of items keeps changing.
+
+Overall, linked lists are a good choice for building a task management system where tasks are added or removed frequently.

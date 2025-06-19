@@ -1,0 +1,13 @@
+In this exercise, we tried sorting customer orders based on the total price so that high-value orders can be prioritized.
+
+We implemented two sorting algorithms:
+- Bubble Sort: Simple but slow. Good for understanding sorting logic.
+- Quick Sort: Much faster and preferred in real-world use cases.
+
+Time Complexity:
+- Bubble Sort: O(n^2)  Gets very slow as the number of orders increases.
+- Quick Sort: O(n log n) average case  Much faster, especially for large data.
+
+Conclusion:
+Bubble Sort is okay for small lists and learning purposes. 
+But for real-world platforms (like e-commerce), Quick Sort is more efficient and recommended because of its better performance.

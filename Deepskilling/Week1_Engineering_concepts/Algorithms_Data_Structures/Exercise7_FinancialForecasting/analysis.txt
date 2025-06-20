@@ -1,0 +1,14 @@
+Why Recursion?
+
+Recursion is a technique where a function calls itself to solve a smaller part of a problem. 
+It is helpful for problems that can be broken down into similar subproblems, like financial growth over time.
+
+Time Complexity:
+- The recursive method runs once for every year, so the time complexity is O(n), where n is the number of years.
+
+Optimization:
+- This recursion is already efficient since we don’t repeat any calculations.
+- However, if we were calculating for multiple branches (like Fibonacci), we would use memoization to cache results.
+- For more performance, this logic can also be written as a loop, but recursion makes the logic clean and easy to understand in this case.
+
+Overall, recursion works well here since we are just multiplying each year’s value with the growth rate until the target year is reached.

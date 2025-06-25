@@ -1,0 +1,19 @@
+CREATE OR REPLACE FUNCTION CalculateMonthlyInstallment (
+  loanAmount NUMBER,
+  annualRate NUMBER,
+  durationYears NUMBER
+)
+RETURN NUMBER
+IS
+  r NUMBER := annualRate / 1200; -- monthly rate
+  n NUMBER := durationYears * 12;
+  emi NUMBER;
+BEGIN
+  IF r = 0 THEN
+    emi := loanAmount / n;
+  ELSE
+    emi := loanAmount * r * POWER(1 + r, n) / (POWER(1 + r, n) - 1);
+  END IF;
+  RETURN ROUND(emi, 2);
+END;
+/

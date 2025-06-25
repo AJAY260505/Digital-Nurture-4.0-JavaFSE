@@ -1,0 +1,26 @@
+DECLARE
+  CURSOR account_cursor IS
+    SELECT AccountID, Balance FROM Accounts;
+
+  v_accountID Accounts.AccountID%TYPE;
+  v_balance Accounts.Balance%TYPE;
+  v_fee CONSTANT NUMBER := 100; -- Annual maintenance fee
+BEGIN
+  OPEN account_cursor;
+  LOOP
+    FETCH account_cursor INTO v_accountID, v_balance;
+    EXIT WHEN account_cursor%NOTFOUND;
+
+    UPDATE Accounts
+    SET Balance = Balance - v_fee
+    WHERE AccountID = v_accountID;
+
+    DBMS_OUTPUT.PUT_LINE('Fee of ' || v_fee || ' applied to Account ID ' || v_accountID);
+  END LOOP;
+  CLOSE account_cursor;
+END;
+/
+
+
+--verify the update
+SELECT * FROM Accounts;

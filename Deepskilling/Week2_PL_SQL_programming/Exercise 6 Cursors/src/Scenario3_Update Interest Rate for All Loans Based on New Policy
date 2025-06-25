@@ -1,0 +1,33 @@
+DECLARE
+  CURSOR loan_cursor IS
+    SELECT LoanID, InterestRate, LoanAmount FROM Loans;
+
+  v_loanID Loans.LoanID%TYPE;
+  v_rate Loans.InterestRate%TYPE;
+  v_amount Loans.LoanAmount%TYPE;
+  v_new_rate NUMBER;
+BEGIN
+  OPEN loan_cursor;
+  LOOP
+    FETCH loan_cursor INTO v_loanID, v_rate, v_amount;
+    EXIT WHEN loan_cursor%NOTFOUND;
+
+    IF v_amount > 8000 THEN
+      v_new_rate := v_rate + 0.5;
+    ELSE
+      v_new_rate := v_rate + 0.2;
+    END IF;
+
+    UPDATE Loans
+    SET InterestRate = v_new_rate
+    WHERE LoanID = v_loanID;
+
+    DBMS_OUTPUT.PUT_LINE('Updated LoanID ' || v_loanID || ' with new rate: ' || v_new_rate);
+  END LOOP;
+  CLOSE loan_cursor;
+END;
+/
+
+
+-- Verify the update
+SELECT LoanID, LoanAmount, InterestRate FROM Loans;

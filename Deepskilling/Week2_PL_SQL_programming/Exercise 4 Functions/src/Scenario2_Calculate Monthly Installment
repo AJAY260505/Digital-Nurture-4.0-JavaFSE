@@ -17,3 +17,11 @@ BEGIN
   RETURN ROUND(emi, 2);
 END;
 /
+
+-- Test the function
+DECLARE
+    v_Installment NUMBER;
+BEGIN
+    v_Installment := CalculateMonthlyInstallment(100000, 7.5, 5);
+    DBMS_OUTPUT.PUT_LINE('Monthly Installment: ₹' || v_Installment);
+END;

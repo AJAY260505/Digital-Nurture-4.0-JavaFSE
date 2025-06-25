@@ -9,3 +9,8 @@ BEGIN
   DBMS_OUTPUT.PUT_LINE('Monthly interest processed for all savings accounts.');
 END;
 /
+
+-- Test the procedure
+BEGIN
+  ProcessMonthlyInterest;
+END;

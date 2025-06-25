@@ -7,3 +7,11 @@ BEGIN
   RETURN age;
 END;
 /
+
+-- Test the function
+DECLARE
+    v_Age NUMBER;
+BEGIN
+    SELECT CalculateAge(DOB) INTO v_Age FROM Customers WHERE CustomerID = 1;
+    DBMS_OUTPUT.PUT_LINE('Customer Age: ' || v_Age);
+END;

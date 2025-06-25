@@ -27,3 +27,9 @@ EXCEPTION
     DBMS_OUTPUT.PUT_LINE('Transfer failed: ' || SQLERRM);
 END;
 /
+
+
+-- Test the procedure
+BEGIN
+  SafeTransferFunds(1, 2, 200);
+END;

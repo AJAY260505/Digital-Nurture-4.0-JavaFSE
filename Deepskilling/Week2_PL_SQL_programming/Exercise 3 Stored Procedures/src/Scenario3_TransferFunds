@@ -32,3 +32,8 @@ EXCEPTION
     DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
 END;
 /
+
+-- Test the procedure
+BEGIN
+  TransferFunds(1, 2, 100); -- Transfers ₹100 from Account 1 to Account 2
+END;

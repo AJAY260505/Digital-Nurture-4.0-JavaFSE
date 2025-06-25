@@ -21,3 +21,10 @@ EXCEPTION
     DBMS_OUTPUT.PUT_LINE('Error updating salary: ' || SQLERRM);
 END;
 /
+
+
+-- Test the procedure
+BEGIN
+  UpdateSalary(1, 10); 
+  UpdateSalary(999, 10);
+END;

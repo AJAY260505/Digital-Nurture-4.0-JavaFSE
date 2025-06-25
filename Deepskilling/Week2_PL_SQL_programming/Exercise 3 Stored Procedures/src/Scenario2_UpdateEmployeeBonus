@@ -13,3 +13,8 @@ EXCEPTION
     DBMS_OUTPUT.PUT_LINE('Error: ' || SQLERRM);
 END;
 /
+
+-- Test the procedure
+BEGIN
+  UpdateEmployeeBonus('IT', 10); --10% bonus to all IT department employees
+END;

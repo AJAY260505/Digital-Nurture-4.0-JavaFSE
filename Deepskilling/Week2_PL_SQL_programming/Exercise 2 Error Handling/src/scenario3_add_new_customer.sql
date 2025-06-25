@@ -19,3 +19,10 @@ EXCEPTION
     DBMS_OUTPUT.PUT_LINE('Failed to add customer: ' || SQLERRM);
 END;
 /
+
+
+-- Test the procedure
+BEGIN
+  AddNewCustomer(3, 'Robert Paul', TO_DATE('1962-10-15', 'YYYY-MM-DD'), 12000);
+  AddNewCustomer(3, 'Duplicate User', TO_DATE('1990-01-01', 'YYYY-MM-DD'), 500); -- Should fail
+END;

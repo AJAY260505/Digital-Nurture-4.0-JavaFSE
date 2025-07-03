@@ -1,4 +1,3 @@
-// File: src/main/java/com/example/controller/UserController.java
 package com.example.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,0 +1,4 @@
+2025-07-03 15:17:13 [com.example.AppenderLoggingExample.main()] DEBUG com.example.AppenderLoggingExample - Debug message - visible in both console and file
+2025-07-03 15:17:13 [com.example.AppenderLoggingExample.main()] INFO  com.example.AppenderLoggingExample - Info message - logged to both console and file
+2025-07-03 15:17:13 [com.example.AppenderLoggingExample.main()] WARN  com.example.AppenderLoggingExample - Warning message - check app.log too
+2025-07-03 15:17:13 [com.example.AppenderLoggingExample.main()] ERROR com.example.AppenderLoggingExample - Error message - captured by both appenders

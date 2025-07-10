@@ -1,4 +1,4 @@
-# Digital Nurture 4.0 – Java Full Stack Engineer (Java FSE) **Superset ID:** 6383393
+# Digital Nurture 4.0 – Java Full Stack Engineer (Java FSE)
 
 **Superset ID:** 6383393
 
@@ -6,16 +6,30 @@ Welcome! 👋
 
 This repository contains all my hands-on exercises and assignments completed as part of Cognizant’s **Digital Nurture 4.0 – Java Full Stack Engineer** training program.
 
-## ✅ Completed Weeks
-- **Week 1**
-  - Design Patterns and Principles
-  - Data Structures and Algorithms
+---
 
-- **Week 2**
-  - PL/SQL Programming
+## ✅ Completed Weeks
+
+### 🗂 Week 1: Foundations
+- Design Principles & Patterns
+- Data Structures and Algorithms
+
+### 🗂 Week 2: Database & Testing
+- PL/SQL Programming
+- Test-Driven Development (TDD) using JUnit5 and Mockito
+- SLF4J Logging Framework
+
+### 🗂 Week 3: Spring Essentials
+- Spring Core and Maven
+- Spring Data JPA with Spring Boot and Hibernate
+
+---
 
 ## 🔧 In Progress
-- **Week 2**
-  - JUnit, Mockito, and SLF4J
+
+### 🛠 Week 4: RESTful Services
+- Spring REST using Spring Boot 3
+
+---
 
 The repository will be updated regularly as I progress through each week of the program.

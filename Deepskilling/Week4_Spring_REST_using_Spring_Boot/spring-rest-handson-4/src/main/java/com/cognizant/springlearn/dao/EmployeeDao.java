@@ -1,21 +1,31 @@
 package com.cognizant.springlearn.dao;
 
-import com.cognizant.springlearn.model.Employee;
-import com.cognizant.springlearn.service.exception.EmployeeNotFoundException;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.cognizant.springlearn.model.Employee;
+import com.cognizant.springlearn.service.exception.EmployeeNotFoundException;
 
 @Repository
 public class EmployeeDao {
-    private static List<Employee> employeeList = new ArrayList<>();
+
+    @Autowired
+    private ApplicationContext context;
+
+    @SuppressWarnings("unchecked")
+    private List<Employee> getEmployeeList() {
+        return (List<Employee>) context.getBean("employeeList");
+    }
 
     public List<Employee> getAllEmployees() {
-        return employeeList;
+        return getEmployeeList();
     }
 
     public void updateEmployee(Employee updatedEmployee) throws EmployeeNotFoundException {
+        List<Employee> employeeList = getEmployeeList();
         for (int i = 0; i < employeeList.size(); i++) {
             if (employeeList.get(i).getId().equals(updatedEmployee.getId())) {
                 employeeList.set(i, updatedEmployee);
@@ -26,6 +36,7 @@ public class EmployeeDao {
     }
 
     public void deleteEmployee(int id) throws EmployeeNotFoundException {
+        List<Employee> employeeList = getEmployeeList();
         for (int i = 0; i < employeeList.size(); i++) {
             if (employeeList.get(i).getId() == id) {
                 employeeList.remove(i);
@@ -36,6 +47,6 @@ public class EmployeeDao {
     }
 
     public void addEmployee(Employee employee) {
-        employeeList.add(employee);
+        getEmployeeList().add(employee);
     }
 }

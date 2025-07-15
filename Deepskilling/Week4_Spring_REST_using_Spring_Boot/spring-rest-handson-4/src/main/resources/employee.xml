@@ -3,38 +3,54 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
            http://www.springframework.org/schema/beans 
-           http://www.springframework.org/schema/beans/spring-beans.xsd">
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!-- Date Formatter Bean -->
+    <bean id="dateFormatter" class="java.text.SimpleDateFormat">
+        <constructor-arg value="dd/MM/yyyy"/>
+    </bean>
+
+    <!-- Define a list of employees -->
     <bean id="employeeList" class="java.util.ArrayList">
         <constructor-arg>
             <list>
                 <bean class="com.cognizant.springlearn.model.Employee">
                     <property name="id" value="1"/>
-                    <property name="name" value="Ajay Kumar"/>
-                    <property name="salary" value="50000"/>
+                    <property name="name" value="Ajay"/>
+                    <property name="salary" value="55000"/>
                     <property name="permanent" value="true"/>
-                    <property name="dateOfBirth">
-                        <bean class="java.text.SimpleDateFormat">
-                            <constructor-arg value="dd/MM/yyyy"/>
-                        </bean>
-                        <property name="date" value="01/01/1990"/>
-                    </property>
                     <property name="department">
                         <bean class="com.cognizant.springlearn.model.Department">
-                            <property name="id" value="1"/>
-                            <property name="name" value="Development"/>
+                            <property name="id" value="101"/>
+                            <property name="name" value="HR"/>
                         </bean>
                     </property>
-                    <property name="skillList">
-                        <list>
-                            <bean class="com.cognizant.springlearn.model.Skill">
-                                <property name="id" value="1"/>
-                                <property name="name" value="Java"/>
-                            </bean>
-                        </list>
+                    <property name="dateOfBirth">
+                        <bean factory-bean="dateFormatter" factory-method="parse">
+                            <constructor-arg value="26/05/2005"/>
+                        </bean>
+                    </property>
+                </bean>
+
+                <bean class="com.cognizant.springlearn.model.Employee">
+                    <property name="id" value="2"/>
+                    <property name="name" value="Ravi"/>
+                    <property name="salary" value="60000"/>
+                    <property name="permanent" value="false"/>
+                    <property name="department">
+                        <bean class="com.cognizant.springlearn.model.Department">
+                            <property name="id" value="102"/>
+                            <property name="name" value="Finance"/>
+                        </bean>
+                    </property>
+                    <property name="dateOfBirth">
+                        <bean factory-bean="dateFormatter" factory-method="parse">
+                            <constructor-arg value="15/08/1990"/>
+                        </bean>
                     </property>
                 </bean>
             </list>
         </constructor-arg>
     </bean>
+
 </beans>

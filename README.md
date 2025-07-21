@@ -11,25 +11,30 @@ This repository contains all my hands-on exercises and assignments completed as 
 ## ✅ Completed Weeks
 
 ### 🗂 Week 1: Foundations
-- Design Principles & Patterns
+- Design Principles & Patterns  
 - Data Structures and Algorithms
 
 ### 🗂 Week 2: Database & Testing
-- PL/SQL Programming
-- Test-Driven Development (TDD) using JUnit5 and Mockito
+- PL/SQL Programming  
+- Test-Driven Development (TDD) using JUnit5 and Mockito  
 - SLF4J Logging Framework
 
 ### 🗂 Week 3: Spring Essentials
-- Spring Core and Maven
+- Spring Core and Maven  
 - Spring Data JPA with Spring Boot and Hibernate
 
+### 🗂 Week 4: RESTful Services
+- Spring REST using Spring Boot 3
+
+### 🗂 Week 5: Microservices
+- Microservices with Spring Boot 3 and Spring Cloud
 ---
 
 ## 🔧 In Progress
 
-### 🛠 Week 4: RESTful Services
-- Spring REST using Spring Boot 3
+### 🛠 Week 6: React
 
+- ReactJS-HOL
 ---
 
 The repository will be updated regularly as I progress through each week of the program.

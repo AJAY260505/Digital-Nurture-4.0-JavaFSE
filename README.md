@@ -1,3 +1,6 @@
+
+
+
 # Digital Nurture 4.0 – Java Full Stack Engineer (Java FSE)
 
 **Superset ID:** 6383393
@@ -11,30 +14,38 @@ This repository contains all my hands-on exercises and assignments completed as 
 ## ✅ Completed Weeks
 
 ### 🗂 Week 1: Foundations
-- Design Principles & Patterns  
-- Data Structures and Algorithms
+
+* Design Principles & Patterns
+* Data Structures and Algorithms
 
 ### 🗂 Week 2: Database & Testing
-- PL/SQL Programming  
-- Test-Driven Development (TDD) using JUnit5 and Mockito  
-- SLF4J Logging Framework
+
+* PL/SQL Programming
+* Test-Driven Development (TDD) using JUnit5 and Mockito
+* SLF4J Logging Framework
 
 ### 🗂 Week 3: Spring Essentials
-- Spring Core and Maven  
-- Spring Data JPA with Spring Boot and Hibernate
+
+* Spring Core and Maven
+* Spring Data JPA with Spring Boot and Hibernate
 
 ### 🗂 Week 4: RESTful Services
-- Spring REST using Spring Boot 3
+
+* Spring REST using Spring Boot 3
 
 ### 🗂 Week 5: Microservices
-- Microservices with Spring Boot 3 and Spring Cloud
+
+* Microservices with Spring Boot 3 and Spring Cloud
+
+### 🗂 Week 6: React Basics
+
+* ReactJS Hands-on Labs (HOL)
+
 ---
 
 ## 🔧 In Progress
 
-### 🛠 Week 6: React
+### 🛠 Week 7: React Advanced
 
-- ReactJS-HOL
----
+* ReactJS Hands-on Labs (HOL)
 
-The repository will be updated regularly as I progress through each week of the program.

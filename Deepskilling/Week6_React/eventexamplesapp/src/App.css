@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+}
+
+input, textarea {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin: 5px;
+}

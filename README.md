@@ -1,6 +1,5 @@
 
 
-
 # Digital Nurture 4.0 – Java Full Stack Engineer (Java FSE)
 
 **Superset ID:** 6383393
@@ -41,11 +40,19 @@ This repository contains all my hands-on exercises and assignments completed as 
 
 * ReactJS Hands-on Labs (HOL)
 
+### 🗂 Week 7: React Advanced
+
+* ReactJS Advanced Hands-on Labs (HOL)
+
+### 🗂 Week 8: Git
+
+* Git Basics
+* Branching, Merging, and Conflict Resolution
+* Remote Repository Integration (GitHub/GitLab)
+* .gitignore usage and cleanup
+
 ---
 
 ## 🔧 In Progress
 
-### 🛠 Week 7: React Advanced
-
-* ReactJS Hands-on Labs (HOL)
-
+*None — all assigned weeks so far are completed.*
